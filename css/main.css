@@ -1,19 +1,61 @@
-body
-{
-
-
-
-
-
-
-	color:red;
-
-
-
-
-
-
+body {
+  background-color: #eee;
 }
-h1{
-	color:green;
+.loading {
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 150px;
+  /* Center of div use the margin-left: and margin-right: auto ======== */
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  background-color: #d2cfcf;
+
+  /* border: red 3px solid;    Broder very Improtant for rote of broder Just*/
+  border-radius: 50%;
+  border-color: #154 #eee #eee #eee;
+  border-width: 17px;
+  border-style: solid;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation the movtion thr div  */
+
+  /* 
+  animation: rot linear 1.5s infinite; ========= short line of anmintion
+  
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-delay: 0s;
+  */
+
+  animation-duration: 1.5s;
+  animation-name: rot;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================= End div Loading  ================ */
+.caption {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ================================= End of caption ================= */
+.contener {
+  width: 400px;
+  border: #154 solid 3px;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
